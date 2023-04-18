@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 
-import './App.css';
 
 const ItemCount = ({ onAdd, initial, stock}) => {
     //initial = 1; //el numero inicial de un contador, por sentido comun tiene que ser mayor o igual a 1
