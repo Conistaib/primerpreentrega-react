@@ -1,16 +1,16 @@
 import './App.css'
-import NavBar from './components/NavBar'
-import CardWIdget from './components/cartWIdget'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return(
-    <div className='App'>
-      <NavBar/>
-      <CardWIdget/>
-      
-      
-    </div>
-  )
+      <BrowserRouter>
+       <NavBar/>
+       <Routes>
+        <Route exact path='/' element={<ItemListContainer />} />
+       </Routes>
+      </BrowserRouter>
+    )
 }
 
 export default App
